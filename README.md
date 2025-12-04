@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# English Logbook – L2 Informatique
 
-## Getting Started
+Ce projet est une application de **logbook d’anglais** réalisée dans le cadre de ma L2 Ingénierie Informatique. Elle me permet de documenter mon niveau actuel, mes objectifs, mon programme de travail et le compte-rendu détaillé de mes 10 heures d’autonomie en anglais.
 
-First, run the development server:
+L’application est construite avec **Next.js (App Router)**, **React**, **Tailwind CSS** et quelques composants UI réutilisables **ShadcnUI**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contenu de l’application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+L’application est organisée en plusieurs sections accessibles via la navigation :
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🏠 Accueil
 
-## Learn More
+- Présentation générale du logbook.
+- CTA pour entrer dans le contenu (introduction, auto‑évaluation, etc.).
+- Design moderne avec animations, gradients et illustrations.
 
-To learn more about Next.js, take a look at the following resources:
+### 📜 Introduction
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Contexte personnel par rapport à l’anglais.
+- Parcours scolaire et exposition à la langue.
+- Pourquoi l’anglais est important pour mon projet professionnel.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Les textes sont chargés depuis des fichiers JSON dédiés pour garder le contenu éditable facilement.
 
-## Deploy on Vercel
+### ✅ Auto‑Évaluation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Radar chart interactif de mes compétences en anglais (compréhension orale/écrite, expression orale/écrite, vocabulaire, grammaire) basé sur des niveaux CECRL (A1–C2).
+- Détails par compétence avec descriptions et **sources de tests** (EF SET, Oxford Online, etc.).
+- Séparation claire entre :
+  - **Points forts** (compréhension, vocabulaire technique, motivation),
+  - **Axes d’amélioration** (expression orale/écrite, grammaire, procrastination).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tout le contenu de cette section est défini dans `data/auto-evaluation.json`.
+
+### 🎯 Objectifs
+
+- Objectifs définis à partir de l’auto‑évaluation :
+  - Expression orale
+  - Expression écrite
+  - Grammaire
+  - Vocabulaire technique (informatique)
+- Chaque objectif a :
+  - Un titre,
+  - Une description,
+  - Un badge de couleur,
+  - Une icône (Mic, PenSquare, BookText…).
+
+Les données viennent de `data/objectifs.json`, et le composant `components/layout/objectifs.jsx` les lit dynamiquement.
+
+### 📅 Programme
+
+- **Programme de travail divisé en blocs** (10 blocs principaux + 2 bonus) d’environ 1 heure.
+- Sessions fun et variées : séries/YouTube en VO, vocabulaire technique, jeux/apps (Wordle, Quizlet, Duolingo) en bonus, expression orale guidée, mini‑projets d’écriture, grammaire ciblée, etc.
+- Texte entièrement géré dans `data/programme.json` :
+  - `introduction` : explication générale du programme,
+  - `iaCard` : comment l’IA m’a aidé à structurer les séances,
+  - `sessions` : description détaillée de chaque bloc.
+
+Le composant `components/layout/programme.jsx` consomme ces données.
+
+### 🕒 Sessions
+
+- Carrousel de **10 sessions** correspondant à mes heures d’autonomie.
+- Pour chaque session :
+  - Titre, date, horaires,
+  - Lien vers les ressources utilisées (YouTube, Google Docs…) rendu via HTML (`dangerouslySetInnerHTML`),
+  - Description détaillée,
+  - Ressentis,
+  - Ce que j’ai aimé / moins aimé,
+  - Ce qui était facile / difficile,
+  - Ce que je veux changer, garder et améliorer,
+  - Une ou plusieurs images illustratives (mini‑carrousel par session, avec recadrage full‑frame).
+- Les données sont stockées dans `data/sessions.json` et affichées par `components/layout/sessions.jsx`.
+
+### 🧾 Bilan & Feedback
+
+- Section de bilan final du semestre (réflexion globale, progression, limites).
+- Formulaire de feedback pour le projet/logbook.
+- Informations sur les technologies utilisées et l’organisation du travail.
+
+---
+
+## Stack technique
+
+- **Framework** : [Next.js](https://nextjs.org) (App Router)
+- **Langage** : TypeScript / JavaScript (composants `.tsx` et `.jsx`)
+- **Styling** : [Tailwind CSS](https://tailwindcss.com)
+- **UI Components** :
+  - Composants maison dans `components/ui` (Card, Badge, Accordion, Carousel, Tabs, Tooltip, etc.)
+  - Icônes [lucide-react](https://lucide.dev/)
+- **Charts** : [Recharts](https://recharts.org) pour le radar chart d’auto‑évaluation
+- **Animations** :
+  - Classes utilitaires Tailwind (`transition`, `transform`, `opacity`…)
+  - Animations d’apparition au scroll (IntersectionObserver + classes `scroll-animate`, `fade-left`, `fade-right`, `fade-up`)
+  - Légères animations de flottement sur les illustrations
+
+---
+
+## Structure principale du projet
+
+```text
+app/
+  layout.tsx      # Layout global
+  page.tsx        # Page principale qui compose les sections
+  globals.css     # Styles globaux + animations
+
+components/
+  layout/
+    [accueil.jsx](http://_vscodecontentref_/1)
+    introduction.jsx
+    [auto-evaluation.jsx](http://_vscodecontentref_/2)
+    objectifs.jsx
+    programme.jsx
+    [sessions.jsx](http://_vscodecontentref_/3)
+    bilan.jsx
+    feedback.jsx
+    header.jsx
+    footer.jsx
+    navbar.jsx
+  ui/
+    card.tsx
+    badge.tsx
+    accordion.tsx
+    carousel.tsx
+    chart-radar-legend.tsx
+    button.tsx
+    input.tsx
+    textarea.tsx
+    ...
+
+data/
+  auto-evaluation.json
+  objectifs.json
+  programme.json
+  sessions.json
+
+public/
+  assets/
+    svg/
+      ... (illustrations utilisées dans les différentes sections)

@@ -1,0 +1,32 @@
+{
+  "introduction": {
+    "title": "Objectifs",
+    "description": "Après auto-évaluation, j'ai défini mes objectifs pour ce semestre. Mon but principal est de consolider mon niveau B2-C1 en anglais, tout en ce concentrant mon apprentissage sur mes points faibles : mon expression écrite dans sa globalité, gagner en fluidité à l’oral, stabiliser mes acquis en grammaire et développer mon vocabulaire technique. Voici mes principaux objectifs sur lesquels je souhaite progresser."
+  },
+  "objectifs": [
+    {
+      "category": "Expression Orale",
+      "description": "Améliorer mes expressions orales en pratiquant régulièrement afin d’être plus fluide et naturel.",
+      "badgeColor": "bg-emerald-100 text-emerald-800",
+      "icon": "Mic"
+    },
+    {
+      "category": "Expression Écrite",
+      "description": "Renforcer la structure de mes phrases, la précision du vocabulaire, les fautes de grammaire pour atteindre un niveau plus proche de B2.",
+      "badgeColor": "bg-violet-100 text-violet-800",
+      "icon": "PenSquare"
+    },
+    {
+      "category": "Grammaire",
+      "description": "Renforcer mes connaissances grammaticales pour limiter les erreurs répétés à l’écrit comme à l’oral.",
+      "badgeColor": "bg-amber-100 text-amber-800",
+      "icon": "BookText"
+    },
+    {
+      "category": "Vocabulaire Technique",
+      "description": "Continuer à enrichir mon vocabulaire technique en informatique dans un contexte académique et professionnel.",
+      "badgeColor": "bg-sky-100 text-sky-800",
+      "icon": "BookText"
+    }
+  ]
+}

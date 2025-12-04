@@ -1,0 +1,85 @@
+{
+  "introduction": {
+    "title": "Programme",
+    "description": "Pour atteindre mes objectifs, j’ai construit un programme en 10 sessions d’environ 1 heure chacun, avec 2 blocs bonus pour aller plus loin. L’idée est de faire des sessions courtes, variées et fun pour garder la motivation tout en progressant."
+  },
+  "iaCard": {
+    "title": "Un Programme Assisté par l'IA",
+    "description": "J’ai demandé à une IA de m'aider à construire un programme à partir de mon auto-évaluation et de mes objectifs. En s’appuyant sur mes points forts (bonne compréhension orale/écrite, vocabulaire tech) et mes faiblesses (expression orale/écrite, grammaire), elle m’a aidé à créer 10 blocs courts mais intenses, plus 2 blocs bonus : séries en VO, jeux de vocabulaire, discussions, écriture de projets persos, révisions ciblées, etc.",
+    "icon": "BrainCircuit"
+  },
+    "sessions": [
+    {
+      "session": "Session 1",
+      "title": "Séries / YouTube en Mode Analyse",
+      "description": "Regarder une vidéo ou un épisode de série en anglais (idéalement sur un sujet qui me passionne, comme l’informatique ou les jeux vidéo). Utiliser les sous-titres anglais, mettre en pause pour noter les expressions et vocabulaire utiles",
+      "icon": "comprehension"
+    },
+    {
+      "session": "Session 2",
+        "title": "Vocabulaire Technique & Flashcards",
+        "description": "À partir des contenus de la Session 1 (séries, vidéos), créer 10 à 15 flashcards avec ces nouveaux mots/expressions et les réviser immédiatement, puis écrire quelques phrases pour les utiliser en contexte.",
+      "icon": "ecrit"
+    },
+    {
+      "session": "Session 3",
+      "title": "Expression Orale Guidée",
+      "description": "Préparer un court texte (10–15 lignes) sur un sujet tech ou un projet perso, puis le lire à voix haute en m’enregistrant. Réécouter l’enregistrement, repérer les passages peu fluides et refaire une deuxième version plus naturelle.",
+      "icon": "oral"
+    },
+    {
+      "session": "Session 4",
+      "title": "Chat & Roleplay",
+      "description": "Discuter en anglais (avec un correspondant, un ami, une IA de chat vocal ou écrit). Simuler une situation réelle : expliquer un bug, présenter un projet, parler de mes études. Noter 5 phrases que j’ai trouvées utiles ou naturelles pour les réutiliser plus tard.",
+      "icon": "oral"
+    },
+    {
+      "session": "Session 5",
+      "title": "Grammaire Ciblée",
+      "description": "Choisir 1 ou 2 points de grammaire qui me posent problème (temps, structures conditionnelles, passif, etc.). Faire quelques exercices ciblés (sites, fiches, applis), puis inventer 8 à 10 phrases personnelles en appliquant ces règles, à l’écrit et à l’oral.",
+      "icon": "ecrit"
+    },
+    {
+      "session": "Session 6",
+      "title": "Mini‑Projet d'Écriture",
+      "description": "Écrire un paragraphe ou un mini‑article (10–15 lignes) sur un sujet que j’aime (jeu vidéo, projet de code, série, hobby). Me concentrer sur la structure des phrases, la clarté et la cohérence. Me relire en corrigeant grammaire et vocabulaire.",
+      "icon": "ecrit"
+    },
+    {
+      "session": "Session 7",
+      "title": "Réécriture & Amélioration",
+      "description": "Reprendre le texte de la Session 6 et le réécrire en version « améliorée » : phrases plus naturelles, vocabulaire plus précis, moins de répétitions. Si possible, utiliser un correcteur ou une IA pour comparer avant/après et comprendre mes erreurs récurrentes.",
+      "icon": "ecrit"
+    },
+    {
+      "session": "Session 8",
+      "title": "Lecture Tech & Vocabulaire",
+      "description": "Lire un article, un tutoriel ou une documentation en anglais sur un sujet informatique. Extraire le vocabulaire intéressant (mots techniques, verbes utiles) et créer de nouvelles flashcards. Écrire 5 phrases où j’utilise ces mots en contexte.",
+      "icon": "ecrit"
+    },
+    {
+      "session": "Session 9",
+      "title": "Session Chill 100 % Anglais",
+      "description": "Faire une session détente mais 100 % en anglais : jeu vidéo en VO, live Twitch, vidéo d’un créateur que j’aime, stream d’un développeur, etc. Profiter du contenu tout en restant attentif aux expressions naturelles et au vocabulaire.",
+      "icon": "ecrit"
+    },
+    {
+      "session": "Session 10",
+      "title": "Projet Perso en Anglais",
+      "description": "Choisir un petit projet perso (documenter un projet de code, écrire une page « About me », décrire mon portfolio) entièrement en anglais. Mélanger vocabulaire technique, expression écrite et un peu de storytelling pour rendre le texte vivant.",
+      "icon": "ecrit"
+    },
+    {
+      "session": "Session Bonus 11",
+      "title": "Jeux & Applis en Anglais",
+      "description": "Session plus fun : utiliser des jeux et applis en anglais (Wordle, Quizlet, Duolingo, quizz en ligne, jeux vidéo en VO) pour travailler le vocabulaire et la grammaire sans pression. L’objectif est de rester exposé à la langue tout en s’amusant.",
+      "icon": "oral"
+    },
+    {
+      "session": "Session 12",
+      "title": "Combo Vocab + Grammaire Fun",
+      "description": "Mixer révisions de vocabulaire (flashcards créées dans les autres blocs) et petits exercices de grammaire en mode léger. Terminer par quelques phrases écrites ou orales où je combine nouveau vocabulaire technique et structures grammaticales revues.",
+      "icon": "ecrit"
+    }
+  ]
+}

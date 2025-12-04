@@ -1,0 +1,97 @@
+{
+  "introduction": {
+    "paragraphs": [
+      "Avant de plonger dans le vif du sujet, permettez-moi de vous parler de mon expérience personnelle avec l'anglais.",
+      "Depuis très jeune, je n'ai jamais vraiment eu de difficultés avec l'anglais. J'ai toujours été à l'aise avec les bases car depuis mon enfance, j'ai été exposé à la langue anglaise à travers divers médias tels que les jeux vidéo, les films et la musique. Cette exposition m'a permis de développer une compréhension intuitive de la langue et notamment aussi grâce au développement fulgurant d'internet car apprendre l'anglais n'a jamais été aussi accessible et simple. Ma passion pour l'informatique m'a aussi beaucoup aidé. J'ai eu de la chance de pouvoir touché un ordinateur dès mon plus jeune âge, ce qui m'a permis de comprendre des termes techniques dans le domaine informatique en anglais. Étant donné que la plupart des langages de programmation et de la documentation sont en anglais cela m'a beaucoup aidé à enrichir mon vocabulaire technique. J'avais donc toujours une certaine aisance avec l'anglais de la primaire jusqu'au collège. Au collège en quatrième, j'ai eu l'opportunité de partir en voyage scolaire en Angleterre, à Nottingham où j'ai était hébérgé chez une famille anglaise pendant une semaine. Ce voyage dans le thème de Robin des Bois m'a permis d'avoir une réel expérience avec la culture anglaise et de pratiquer l'anglais au quotidien. J'ai beaucoup apprécié cette expérience nottament les activités culturelles et historiques que nous avons faites, comme la visite de Nottingham Castle et de Sherwood Forest. J'ai donc beaucoup appris durant ce voyage et cela a renforcé mon intérêt pour la langue anglaise.",
+      "En arrivant au lycée, je me suis rendu compte de mes lacunes et que je ne faisais simplement que me reposer sur mes acquis sans réellement progresser, car je n'avais jamais pris au sérieux l'apprentissage de l'anglais. J'ai donc choisi de prendre comme spécialité LLCE (Langues, Littératures et Cultures Étrangères) anglais en première afin de renforcer mes compétences linguistiques et culturelles. Je sais que ce choix m'aidera pour le futur car j'ai des ambitions professionnelles où l'anglais sera un atout majeur. J'aimerais voyager et travailler à l'international si possible, et l'anglais est donc une langue essentielle à maîtriser pour atteindre cet objectif."
+    ]
+  },
+  "competences": [
+    {
+      "id": "comprehension-orale",
+      "title": "Compréhension orale",
+      "niveau": "C2",
+      "description": "Mon niveau en compréhension orale est de niveau C2, d'après ma dernière auto-évaluation.<br />Source : <a href='https://cert.efset.org/en/PkdU5D' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>EF SET (English Standard Test)</a>"
+    },
+    {
+      "id": "comprehension-ecrite",
+      "title": "Compréhension écrite",
+      "niveau": "C1",
+      "description": "Mon niveau en compréhension écrite est de niveau C1, d'après ma dernière auto-évaluation.<br />Source : <a href='https://cert.efset.org/en/PkdU5D' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>EF SET (English Standard Test)</a>"
+    },
+    {
+      "id": "vocabulaire",
+      "title": "Vocabulaire",
+      "niveau": "B2",
+      "description": "Mon niveau de Vocabulaire est de niveau B2, d'après ma dernière auto-évaluation.<br />Source : <a href='https://www.oxfordonlineenglish.com/english-level-test/vocabulary' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>Oxford Online English Vocabulary Test</a>"
+    },
+    {
+      "id": "expression-orale",
+      "title": "Expression orale",
+      "niveau": "B2",
+      "description": "Je suppose mon niveau en expression orale est de niveau B2, d'après ma dernière auto-évaluation.<br/> Pas de source formelle pour cette compétence."
+    },
+    {
+      "id": "expression-ecrite",
+      "title": "Expression écrite",
+      "niveau": "B1",
+      "description": "Mon niveau en expression écrite est de niveau B1, d'après ma dernière auto-évaluation.<br />Source : <a href='https://cert.efset.org/en/PkdU5D' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>EF SET (English Standard Test)</a>"
+    },
+    {
+      "id": "grammaire",
+      "title": "Grammaire",
+      "niveau": "B2",
+      "description": "Mon niveau en grammaire est de niveau B2 Upper Intermediate, d'après ma dernière auto-évaluation.<br />Source : <a href='https://www.oxfordonlineenglish.com/english-level-test/grammar' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>Oxford Online English Grammar Test</a>"
+    }
+  ],
+  "forces": {
+    "title": "Points Forts",
+    "items": [
+      "Bonne compréhension orale.",
+      "Bonne compréhension écrite.",
+      "Vocabulaire technique informatique solide.",
+      "Curiosité et motivation pour apprendre."
+    ],
+    "badges": [
+      {
+        "label": "Curiosité",
+        "color": "bg-emerald-100 text-emerald-800"
+      },
+      {
+        "label": "Vocabulaire Tech",
+        "color": "bg-sky-100 text-sky-800"
+      },
+      {
+        "label": "Compréhension",
+        "color": "bg-violet-100 text-violet-800"
+      }
+    ]
+  },
+  "faiblesses": {
+    "title": "Axes d'Amélioration",
+    "items": [
+      "Manque de fluidité et d'aisance à l'oral.",
+      "Manque de précision et d'aisance dans l'expression écrite.",
+      "Tendance à me reposer sur mes acquis.",
+      "Grammaire parfois approximative."
+    ],
+    "badges": [
+      {
+        "label": "Expression Orale",
+        "color": "bg-rose-100 text-rose-800"
+      },
+      {
+        "label": "Expression Écrite",
+        "color": "bg-pink-100 text-pink-800"
+      },
+      {
+        "label": "Grammaire",
+        "color": "bg-amber-100 text-amber-800"
+      },
+      {
+        "label": "Procrastination",
+        "color": "bg-indigo-100 text-indigo-800"
+      }
+    ]
+  }
+}
