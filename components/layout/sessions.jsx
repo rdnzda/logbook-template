@@ -86,7 +86,7 @@ export default function Sessions() {
                                                         <CardHeader className="p-0 flex-shrink-0">
                                                             <div className="flex items-start justify-between gap-4 relative min-h-[120px] md:min-h-[170px]">
                                                                 {(session.images && session.images.length > 0) && (
-                                                                    <div className="hidden md:block absolute top-0 right-0 w-72 h-40 flex-shrink-0 rounded-xl overflow-hidden bg-black/5 z-10 group">
+                                                                    <div className="hidden lg:block absolute top-0 right-0 w-72 h-40 flex-shrink-0 rounded-xl overflow-hidden bg-black/5 z-10 group">
                                                                         <Carousel className="w-full h-full" opts={{ loop: true }}>
                                                                             <CarouselContent className="h-full -ml-0">
                                                                                 {session.images.map((imageUrl, imgIndex) => (
@@ -115,7 +115,7 @@ export default function Sessions() {
                                                                         )}
                                                                     </div>
                                                                 )}
-                                                                <div className={(session.images && session.images.length > 0) ? "flex-1 md:pr-80" : "flex-1"}>
+                                                                <div className={(session.images && session.images.length > 0) ? "flex-1 lg:pr-80" : "flex-1"}>
                                                                     <CardTitle className="text-xl md:text-2xl">{session.title}</CardTitle>
                                                                     {session.subtitle && (
                                                                         <p
