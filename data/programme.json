@@ -23,27 +23,27 @@
     },
     {
       "session": "Session 3",
-      "title": "Expression Orale Guidée",
-      "description": "Préparer un court texte (10–15 lignes) sur un sujet tech ou un projet perso, puis le lire à voix haute en m’enregistrant. Réécouter l’enregistrement, repérer les passages peu fluides et refaire une deuxième version plus naturelle.",
-      "icon": "oral"
+      "title": "Session Chill 100 % Anglais",
+      "description": "Faire une session détente mais 100 % en anglais : jeu vidéo en VO, live Twitch, vidéo d’un créateur que j’aime, stream d’un développeur, etc. Profiter du contenu tout en restant attentif aux expressions naturelles et au vocabulaire.",
+      "icon": "ecrit"
     },
     {
       "session": "Session 4",
-      "title": "Chat & Roleplay",
-      "description": "Discuter en anglais (avec un correspondant, un ami, une IA de chat vocal ou écrit). Simuler une situation réelle : expliquer un bug, présenter un projet, parler de mes études. Noter 5 phrases que j’ai trouvées utiles ou naturelles pour les réutiliser plus tard.",
-      "icon": "oral"
-    },
-    {
-      "session": "Session 5",
       "title": "Grammaire Ciblée",
       "description": "Choisir 1 ou 2 points de grammaire qui me posent problème (temps, structures conditionnelles, passif, etc.). Faire quelques exercices ciblés (sites, fiches, applis), puis inventer 8 à 10 phrases personnelles en appliquant ces règles, à l’écrit et à l’oral.",
       "icon": "ecrit"
     },
     {
+      "session": "Session 5",
+      "title": "Chat & Roleplay",
+      "description": "Discuter en anglais (avec un correspondant, un ami, une IA de chat vocal ou écrit). Simuler une situation réelle : expliquer un bug, présenter un projet, parler de mes études. Noter 5 phrases que j’ai trouvées utiles ou naturelles pour les réutiliser plus tard.",
+      "icon": "oral"
+    },
+    {
       "session": "Session 6",
-      "title": "Mini‑Projet d'Écriture",
-      "description": "Écrire un paragraphe ou un mini‑article (10–15 lignes) sur un sujet que j’aime (jeu vidéo, projet de code, série, hobby). Me concentrer sur la structure des phrases, la clarté et la cohérence. Me relire en corrigeant grammaire et vocabulaire.",
-      "icon": "ecrit"
+      "title": "Expression Orale Guidée",
+      "description": "Préparer un court texte (10–15 lignes) sur un sujet tech ou un projet perso, puis le lire à voix haute en m’enregistrant. Réécouter l’enregistrement, repérer les passages peu fluides et refaire une deuxième version plus naturelle.",
+      "icon": "oral"
     },
     {
       "session": "Session 7",
@@ -59,8 +59,8 @@
     },
     {
       "session": "Session 9",
-      "title": "Session Chill 100 % Anglais",
-      "description": "Faire une session détente mais 100 % en anglais : jeu vidéo en VO, live Twitch, vidéo d’un créateur que j’aime, stream d’un développeur, etc. Profiter du contenu tout en restant attentif aux expressions naturelles et au vocabulaire.",
+      "title": "Mini‑Projet d'Écriture",
+      "description": "Écrire un paragraphe ou un mini‑article (10–15 lignes) sur un sujet que j’aime (jeu vidéo, projet de code, série, hobby). Me concentrer sur la structure des phrases, la clarté et la cohérence. Me relire en corrigeant grammaire et vocabulaire.",
       "icon": "ecrit"
     },
     {
@@ -74,12 +74,6 @@
       "title": "Jeux & Applis en Anglais",
       "description": "Session plus fun : utiliser des jeux et applis en anglais (Wordle, Quizlet, Duolingo, quizz en ligne, jeux vidéo en VO) pour travailler le vocabulaire et la grammaire sans pression. L’objectif est de rester exposé à la langue tout en s’amusant.",
       "icon": "oral"
-    },
-    {
-      "session": "Session Bonus 12",
-      "title": "Combo Vocab + Grammaire Fun",
-      "description": "Mixer révisions de vocabulaire (flashcards créées dans les autres blocs) et petits exercices de grammaire en mode léger. Terminer par quelques phrases écrites ou orales où je combine nouveau vocabulaire technique et structures grammaticales revues.",
-      "icon": "ecrit"
     }
   ]
 }

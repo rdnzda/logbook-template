@@ -88,7 +88,7 @@ Le composant `components/layout/programme.jsx` consomme ces données.
 - **Langage** : TypeScript / JavaScript (composants `.tsx` et `.jsx`)
 - **Styling** : [Tailwind CSS](https://tailwindcss.com)
 - **UI Components** :
-  - Composants maison dans `components/ui` (Card, Badge, Accordion, Carousel, Tabs, Tooltip, etc.)
+  - Composants maison et ShadcnUI dans `components/ui` (Card, Badge, Accordion, Carousel, Tabs, Tooltip, etc.)
   - Icônes [lucide-react](https://lucide.dev/)
 - **Charts** : [Recharts](https://recharts.org) pour le radar chart d’auto‑évaluation
 - **Animations** :
@@ -139,4 +139,6 @@ data/
 public/
   assets/
     svg/
+      ... (illustrations utilisées dans les différentes sections)
+    img/
       ... (illustrations utilisées dans les différentes sections)

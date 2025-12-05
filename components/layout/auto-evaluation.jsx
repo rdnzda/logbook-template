@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { ChartRadarLegend } from "@/components/ui/chart-radar-legend";
 import { ThumbsUp, ThumbsDown } from "lucide-react";
 import autoEvaluationData from "@/data/auto-evaluation.json";
+import { useLanguage } from "@/components/context/language-context";
 import {
     Accordion,
     AccordionItem,
@@ -13,6 +14,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../ui
 import { Badge } from "../ui/badge";
 
 export default function AutoEvaluation() {
+    const { lang, toggleLang } = useLanguage();
     useEffect(() => {
         const observerOptions = {
             threshold: 0.1,
@@ -51,9 +53,23 @@ export default function AutoEvaluation() {
             </svg>
             <div className="flex flex-col mx-6 md:mx-30 mt-40 md:mt-50 relative z-10 scroll-animate fade-right">
                 <div className="w-full space-y-6">
-                    <h1 className="text-4xl md:text-7xl font-bold">Auto-Évaluation</h1>
+                    <div className="flex items-center gap-3">
+                        <h1 className="text-4xl md:text-7xl font-bold">Auto-Évaluation</h1>
+                        <button
+                            type="button"
+                            className="text-xs md:text-sm font-semibold px-3 py-1 rounded-md border border-primary/30 hover:bg-primary/10"
+                            onClick={toggleLang}
+                            aria-label="Basculer la langue"
+                        >
+                            {/* Show EN when current is FR, FR when current is EN */}
+                            {lang === "fr" ? "EN" : "FR"}
+                        </button>
+                    </div>
                     <div className="text-sm md:text-xl text-justify space-y-3">
-                        {autoEvaluationData.introduction.paragraphs.map((paragraph, index) => (
+                        {(lang === "en"
+                            ? (autoEvaluationData.introduction.paragraphs_en || autoEvaluationData.introduction.paragraphs)
+                            : autoEvaluationData.introduction.paragraphs
+                          ).map((paragraph, index) => (
                             <p key={index}>{paragraph}</p>
                         ))}
                     </div>

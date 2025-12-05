@@ -1,13 +1,39 @@
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../ui/card";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "../ui/accordion";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { Badge } from "../ui/badge";
 import { Calendar, Clock } from "lucide-react";
 import sessionsDataJson from "../../data/sessions.json";
+import { useEffect, useState } from "react";
 
 const sessionsData = sessionsDataJson.sessions;
 
 export default function Sessions() {
+    const [carouselApi, setCarouselApi] = useState(null);
+    const totalSlides = 11;
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    useEffect(() => {
+        if (!carouselApi) return;
+        const onSelect = () => {
+            try {
+                const idx = carouselApi.selectedScrollSnap();
+                if (typeof idx === "number") setCurrentSlide(idx);
+            } catch (e) {}
+        };
+        onSelect();
+        carouselApi.on("select", onSelect);
+        return () => {
+            try { carouselApi.off && carouselApi.off("select", onSelect); } catch (e) {}
+        };
+    }, [carouselApi]);
+
+    const goToSlide = (i) => {
+        try { carouselApi && carouselApi.scrollTo(i); } catch (e) {}
+    };
+
     return (
         <section id="sessions" className="relative w-full flex flex-col bg-background text-foreground">
             <svg
@@ -33,9 +59,9 @@ export default function Sessions() {
                         </p>
                     </div>
 
-                    <Carousel className="w-full max-w-6xl mx-auto pt-6 md:pt-10 scroll-animate fade-left" opts={{ loop: true }}>
+                    <Carousel className="w-full max-w-6xl mx-auto pt-6 md:pt-10 scroll-animate fade-left" opts={{ loop: true }} setApi={setCarouselApi}>
                         <CarouselContent>
-                            {Array.from({ length: 10 }).map((_, index) => {
+                            {Array.from({ length: 11 }).map((_, index) => {
                                 const session = sessionsData.find(s => s.id === index + 1) || {
                                     id: index + 1,
                                     title: `Session ${index + 1}`,
@@ -214,6 +240,20 @@ export default function Sessions() {
                         </CarouselContent>
                         <CarouselPrevious className="ml-[-50px] hidden md:flex" />
                         <CarouselNext className="mr-[-50px] hidden md:flex" />
+                        {/* Pagination dots below the carousel */}
+                        <div className="mt-4 flex w-full justify-center gap-1.5">
+                            {Array.from({ length: totalSlides }).map((_, i) => (
+                                <button
+                                    key={`dot-${i}`}
+                                    type="button"
+                                    onClick={() => goToSlide(i)}
+                                    aria-label={`Aller à la session ${i + 1}`}
+                                    className={`h-2 w-2 rounded-full transition-colors ${
+                                        i === currentSlide ? "bg-primary" : "bg-foreground/30 hover:bg-foreground/50"
+                                    }`}
+                                />
+                            ))}
+                        </div>
                     </Carousel>
                 </div>
             </div>

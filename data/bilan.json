@@ -1,7 +1,7 @@
 {
   "introduction": {
     "title": "Bilan",
-    "description": "Suite à mon auto-évaluation, j'ai défini des objectifs clairs pour ce semestre. Mon but principal est d'atteindre un niveau B2 solide, en me concentrant particulièrement sur la fluidité à l'oral et l'enrichissement de mon vocabulaire technique en informatique. Voici les compétences que je souhaite améliorer."
+    "description": "Voici le bilan de mon parcours d'apprentissage en autonomie."
   },
   "bilanFinal": {
     "title": "Bilan Final",
@@ -10,27 +10,27 @@
       {
         "id": "item-1",
         "question": "Ce que j'ai appris sur moi et ma capacité à apprendre",
-        "reponse": "Ce parcours m'a révélé une discipline que je ne soupçonnais pas. En structurant mes sessions, j'ai découvert que ma capacité de concentration et de mémorisation est bien plus grande lorsque je suis un plan clair. L'autonomie, loin d'être un obstacle, est devenue un moteur de motivation."
+        "reponse": "Ce parcours m'a permis de faire un auto-diagnostic honnête de mes compétences en anglais. J'ai découvert que je suis capable de structurer mon apprentissage de manière autonome, en identifiant mes forces et mes faiblesses."
       },
       {
         "id": "item-2",
         "question": "Mes impressions générales",
-        "reponse": "L'expérience a été extrêmement positive. Au début, l'idée de tenir un journal de bord semblait fastidieuse, mais c'est rapidement devenu un rituel gratifiant. Voir mes progrès, même les plus petits, a été une source constante d'encouragement."
+        "reponse": "J'ai beaucoup aimé faire ce parcours en autonomie. Grâce à l'aide de l'IA, j'ai pu faire un programme fun et adapté à mes besoins pour progresser tout en restant motivé. J'ai donc pu travailler mes points faibles tout en m'amusant avec des contenus qui me passionnent."
       },
       {
         "id": "item-3",
         "question": "Le point sur mes objectifs",
-        "reponse": "J'ai non seulement atteint mon objectif principal de tenir une conversation simple, mais je l'ai dépassé. Je me sens désormais capable de comprendre des contextes plus complexes et d'exprimer des idées nuancées. Les objectifs intermédiaires ont été cruciaux pour maintenir le cap."
+        "reponse": "Je ne pense pas que pratiquer l'anglais pendant 2 ou 3 mois m'ont permis d'atteindre tous mes objectifs, en ayant refait les test EF SET, j'ai toujours le même niveau en expression écrite mais j'ai fait des progrès notables. J'ai pu améliorer ma grammaire et mon vocabulaire technique, ce qui me sera très utile pour mes études et ma future carrière."
       },
       {
         "id": "item-4",
         "question": "Mon état d'esprit",
-        "reponse": "Je suis passé d'un état d'appréhension à une confiance sereine. Chaque session réussie a renforcé ma conviction que je pouvais y arriver. Aujourd'hui, je n'aborde plus l'apprentissage comme une corvée, mais comme une exploration passionnante."
+        "reponse": "Je me sens plus confiant avec l'anglais maintenant. J'ai pris conscience de mes capacités et je suis motivé pour continuer à progresser."
       },
       {
         "id": "item-5",
         "question": "Mon avis sur le guide et les sessions en autonomie",
-        "reponse": "Le guide a été un excellent compagnon de route, fournissant la structure nécessaire sans être rigide. Il m'a appris à organiser mon propre apprentissage, une compétence qui me sera utile bien au-delà des langues. Les sessions en autonomie m'ont permis d'adapter le rythme à mes besoins, ce qui a été fondamental pour mon succès."
+        "reponse": "Le guide a été un excellent compagnon de route, même si je ne l'ai pas toujours suivi à la lettre, il m'a donné une structure claire pour la conception de mon logbook. Je suis très content de pouvoir rendre ce logbook sous forme de site web, c'est un format moderne et interactif qui me permet de partager mon expérience facilement."
       }
     ]
   }

@@ -41,9 +41,14 @@ export default function Navbar() {
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="absolute top-full left-0 right-0 bg-primary shadow-lg lg:hidden z-50">
+      {/* Mobile Menu with slide & fade animation */}
+      <div
+        className={`absolute top-full left-0 right-0 lg:hidden z-50 transform transition-all duration-300 ease-out ${
+          isOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"
+        }`}
+        aria-hidden={!isOpen}
+      >
+        <div className="bg-primary shadow-lg">
           <ul className="flex flex-col py-4">
             {menuItems.map((item) => (
               <li key={item.href}>
@@ -58,7 +63,14 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-      )}
+        {/* Backdrop for focus + subtle fade */}
+        <div
+          className={`fixed inset-0 bg-black/20 transition-opacity duration-300 ${
+            isOpen ? "opacity-100" : "opacity-0"
+          }`}
+          onClick={() => setIsOpen(false)}
+        />
+      </div>
     </nav>
   );
 }

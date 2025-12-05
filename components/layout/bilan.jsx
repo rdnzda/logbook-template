@@ -1,17 +1,12 @@
 "use client"
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion"
-import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import bilanData from "@/data/bilan.json"
 
 const Bilan = () => {
     return (
@@ -34,53 +29,37 @@ const Bilan = () => {
                 <div className="flex flex-col">
                     <div className="w-full space-y-6">
                         <div className="scroll-animate fade-right">
-                            <h1 className="text-4xl md:text-7xl font-bold">Bilan</h1>
+                            <h1 className="text-4xl md:text-7xl font-bold">{bilanData.introduction.title}</h1>
                             <p className="text-sm md:text-xl text-justify mt-4">
-                                Suite à mon auto-évaluation, j'ai défini des objectifs clairs pour ce semestre. Mon but principal est d'atteindre un niveau B2 solide, en me concentrant particulièrement sur la fluidité à l'oral et l'enrichissement de mon vocabulaire technique en informatique. Voici les compétences que je souhaite améliorer.
+                                {bilanData.introduction.description}
                             </p>
                         </div>
                     </div>
                 </div>
-                <Card className="scroll-animate fade-up">
-                    <CardHeader>
-                        <CardTitle className="text-lg md:text-xl">Bilan Final</CardTitle>
-                        <CardDescription className="text-xs md:text-sm">Une réflexion sur mon expérience globale.</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                        <Accordion type="single" collapsible className="w-full">
-                            <AccordionItem value="item-1">
-                                <AccordionTrigger className="text-sm md:text-base">Ce que j'ai appris sur moi et ma capacité à apprendre</AccordionTrigger>
-                                <AccordionContent className="text-xs md:text-base">
-                                    Ce parcours m'a révélé une discipline que je ne soupçonnais pas. En structurant mes sessions, j'ai découvert que ma capacité de concentration et de mémorisation est bien plus grande lorsque je suis un plan clair. L'autonomie, loin d'être un obstacle, est devenue un moteur de motivation.
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="item-2">
-                                <AccordionTrigger className="text-sm md:text-base">Mes impressions générales</AccordionTrigger>
-                                <AccordionContent className="text-xs md:text-base">
-                                    L'expérience a été extrêmement positive. Au début, l'idée de tenir un journal de bord semblait fastidieuse, mais c'est rapidement devenu un rituel gratifiant. Voir mes progrès, même les plus petits, a été une source constante d'encouragement.
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="item-3">
-                                <AccordionTrigger className="text-sm md:text-base">Le point sur mes objectifs</AccordionTrigger>
-                                <AccordionContent className="text-xs md:text-base">
-                                    J'ai non seulement atteint mon objectif principal de tenir une conversation simple, mais je l'ai dépassé. Je me sens désormais capable de comprendre des contextes plus complexes et d'exprimer des idées nuancées. Les objectifs intermédiaires ont été cruciaux pour maintenir le cap.
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="item-4">
-                                <AccordionTrigger className="text-sm md:text-base">Mon état d'esprit</AccordionTrigger>
-                                <AccordionContent className="text-xs md:text-base">
-                                    Je suis passé d'un état d'appréhension à une confiance sereine. Chaque session réussie a renforcé ma conviction que je pouvais y arriver. Aujourd'hui, je n'aborde plus l'apprentissage comme une corvée, mais comme une exploration passionnante.
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="item-5">
-                                <AccordionTrigger className="text-sm md:text-base">Mon avis sur le guide et les sessions en autonomie</AccordionTrigger>
-                                <AccordionContent className="text-xs md:text-base">
-                                    Le guide a été un excellent compagnon de route, fournissant la structure nécessaire sans être rigide. Il m'a appris à organiser mon propre apprentissage, une compétence qui me sera utile bien au-delà des langues. Les sessions en autonomie m'ont permis d'adapter le rythme à mes besoins, ce qui a été fondamental pour mon succès.
-                                </AccordionContent>
-                            </AccordionItem>
-                        </Accordion>
-                    </CardContent>
-                </Card>
+                <div className="scroll-animate fade-up">
+                    <Card className="bg-background text-foreground">
+                        <CardHeader>
+                            <CardTitle className="text-lg md:text-xl">{bilanData.bilanFinal.title}</CardTitle>
+                            <CardDescription className="text-xs md:text-sm">{bilanData.bilanFinal.subtitle}</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                                {bilanData.bilanFinal.items.map((item) => (
+                                    <Card key={item.id} className="bg-muted text-foreground">
+                                        <CardHeader className="pb-2">
+                                            <CardTitle className="text-sm md:text-base">{item.question}</CardTitle>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <p className="text-xs md:text-sm leading-relaxed text-justify">
+                                                {item.reponse}
+                                            </p>
+                                        </CardContent>
+                                    </Card>
+                                ))}
+                            </div>
+                        </CardContent>
+                    </Card>
+                </div>
             </div>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
