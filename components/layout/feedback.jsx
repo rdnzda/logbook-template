@@ -111,7 +111,7 @@ export default function Feedback() {
                                 <div>
                                     <h3 className="font-semibold mb-3 text-sm md:text-base">Code du projet</h3>
                                     <Button asChild className="text-sm md:text-base">
-                                        <a href="https://github.com/votre-utilisateur/votre-repo" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://github.com/rdnzda/logbook-template" target="_blank" rel="noopener noreferrer">
                                             <Github className="mr-2 h-4 w-4" />
                                             Voir sur GitHub
                                         </a>
